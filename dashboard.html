@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Milk Tea Shop | Menu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Milk Tea Shop</h1>
+</header>
+
+<section class="section">
+  <h2>Milk Tea</h2>
+  <div class="menu-grid" id="milktea"></div>
+</section>
+
+<section class="section">
+  <h2>Snacks</h2>
+  <div class="menu-grid" id="snacks"></div>
+</section>
+
+<section class="section">
+  <h2>Desserts</h2>
+  <div class="menu-grid" id="desserts"></div>
+</section>
+
+<section class="cart-section">
+  <h2>Your Order</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Qty</th>
+        <th>Price</th>
+        <th>Subtotal</th>
+      </tr>
+    </thead>
+    <tbody id="cart"></tbody>
+  </table>
+
+  <h3>Total: ₱<span id="total">0</span></h3>
+
+  <button onclick="checkout()">Checkout</button>
+</section>
+
+<script src="main.js"></script>
+</body>
+</html>
